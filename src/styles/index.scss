@@ -1,0 +1,209 @@
+/*
+ * Aplós v2.3.0 (https://aplos.gxbs.me/)
+ * Copyright 2024-present Gabriel Cozma
+ * Licensed under MIT License (https://github.com/aplosdev/aplos/blob/main/LICENSE)
+ *
+ * A VitePress theme (https://vitepress.dev) & inspired by Duckquill (https://duckquill.daudix.one)
+ */
+
+@import "common";
+@import "medias";
+@import "typography";
+@import "color";
+@import "variables";
+
+/* Components */
+
+@import "components/cards";
+@import "components/semantics";
+@import "components/table";
+@import "components/images";
+@import "components/links";
+@import "components/list";
+
+:root {
+  --content-width: 58rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  grid-template-rows: auto minmax(auto, 1fr) auto;
+  background-color: var(--color-background);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+main {
+  margin: 7% auto 4%;
+  width: 60vw;
+  max-width: var(--content-width);
+}
+
+html {
+  scroll-behavior: smooth;
+  accent-color: var(--color-accent);
+}
+
+.lang {
+  position: absolute;
+  right: 1.5rem;
+  transition: all 0.25s ease;
+  margin-top: 0.825rem;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.vp-code:hover .lang {
+  display: none;
+}
+
+:focus-visible {
+  animation: focus-in 0.2s;
+  outline: 0.125rem solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  :focus {
+    animation: focus-in 0.2s;
+    outline: 0.125rem solid var(--color-accent);
+    outline-offset: 2px;
+
+    @keyframes focus-in {
+      from {
+        outline: 0.5rem solid transparent;
+        outline-offset: 0.25rem;
+      }
+    }
+  }
+}
+
+/* Miscellaneous */
+
+.table-of-contents {
+  -webkit-backdrop-filter: blur(0.625rem);
+  position: fixed;
+  top: 9.375rem;
+  left: 10%;
+  z-index: 9999;
+  backdrop-filter: blur(0.625rem);
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 0.625rem 1.5625rem;
+  overflow: hidden;
+  text-align: left;
+
+  ul {
+    margin: 0 0 0 0.9375rem;
+    padding: 0;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    list-style-type: decimal;
+
+    &:first-child::before {
+      display: block;
+      margin-bottom: 0.625rem;
+      content: "Table of Contents";
+      color: var(--color-text-secondary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    li {
+      margin: 0.3rem 0;
+      text-align: left;
+
+      ul li {
+        list-style-type: disc;
+      }
+
+      a {
+        display: block;
+        transform: scale(1);
+        transition:
+          color 0.7s ease,
+          transform 100ms ease;
+        margin: 0 0.3125rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        letter-spacing: -0.045rem;
+        text-align: left;
+        text-decoration: underline solid var(--color-accent);
+
+        &:hover {
+          color: var(--color-accent);
+        }
+
+        &:active {
+          transform: scale(0.9);
+          color: var(--color-accent);
+        }
+
+        &.active {
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+}
+
+button.copy,
+.header-anchor {
+  display: none;
+  /* Needs to be written */
+}
+
+.numeric {
+  counter-reset: h2;
+
+  @mixin numeric($counter, $content, $reset) {
+    counter-reset: $reset;
+    &:before {
+      counter-increment: $counter;
+      content: $content;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &::before {
+      font-size: 70%;
+      color: var(--color-text-secondary);
+      font-weight: 800;
+      margin-right: 0.5rem;
+    }
+  }
+
+  h2 {
+    @include numeric(h2, ". ", h3);
+  }
+
+  h3 {
+    @include numeric(h3, counter(h2) "." counter(h3) ". ", h4);
+  }
+
+  h4 {
+    @include numeric(h4, counter(h2) "." counter(h3) "." counter(h4) ". ", h5);
+  }
+
+  h5 {
+    @include numeric(
+      h5,
+      counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ",
+      h6
+    );
+  }
+}

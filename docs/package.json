@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "sencilla": "workspace:*"
+  },
+  "devDependencies": {
+    "sass": "^1.77.4",
+    "vitepress": "^1.2.3"
+  }
+}

@@ -1,0 +1,100 @@
+@use "sass:color";
+
+.custom-block:not(.details) {
+  margin: 1.25rem 0;
+  border-radius: var(--rounded-sm);
+  padding: 1.8rem 1.25rem;
+  width: max-content;
+  min-width: 45%;
+  max-width: 70%;
+  line-height: 1.5rem;
+
+  p:not(.custom-block-title) {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .custom-block-title {
+    margin-top: 0;
+    margin-bottom: 0.625rem;
+    font-weight: 800;
+    font-size: 1.8rem;
+
+    &::before {
+      display: inline;
+      vertical-align: middle;
+      filter: 0;
+      margin-right: 0.5rem;
+
+      @media (prefers-color-scheme: dark) {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  .lang {
+    display: none;
+  }
+}
+
+@mixin customBlock($color, $icon) {
+  border-left: $color 0.4rem solid;
+  background-color: #{$color}1e;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #{$color}2a;
+  }
+
+  .custom-block-title,
+  a {
+    color: color.scale($color, $lightness: -70%);
+
+    @media (prefers-color-scheme: dark) {
+      color: color.scale($color, $lightness: 50%);
+    }
+  }
+
+  .custom-block-title::before {
+    content: url("../icons/" + $icon + ".svg");
+  }
+}
+
+.danger {
+  @include customBlock(#cc0000, "warning");
+}
+
+.warning {
+  @include customBlock(#ff9900, "warning");
+}
+
+.tip {
+  @include customBlock(#009900, "lightbulb");
+}
+
+.info {
+  @include customBlock(#0066cc, "info");
+}
+
+.note {
+  @include customBlock(#0066cc, "info");
+}
+
+.details {
+  margin: 1.25rem 0;
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-background-second);
+  padding: 1rem;
+  min-width: 45%;
+  max-width: max-content;
+
+  summary {
+    cursor: pointer;
+    margin-top: 0;
+    font-weight: 700;
+  }
+
+  p {
+    margin: 0.625rem 0 0 0;
+    font-size: 0.9375rem;
+  }
+}
