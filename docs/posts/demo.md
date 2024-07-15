@@ -12,7 +12,6 @@ tags:
   - demo
 ---
 
-
 > [!WARNING] Heads Up!
 > If you want to see the blog demo, you can see it [here](/blog/)
 
@@ -336,4 +335,3 @@ You can add a check box by using the `[ ]` tag:
 - [x] Checked Box
 
 - [ ] Unchecked Box
-

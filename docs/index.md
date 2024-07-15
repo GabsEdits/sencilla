@@ -4,7 +4,7 @@ pageClass: home
 
 # Sencilla
 
-A dead simple and minimalistic theme for blogs in VitePress. 
+A dead simple and minimalistic theme for blogs in VitePress.
 
 <ArticleList />
 

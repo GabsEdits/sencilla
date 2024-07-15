@@ -4,7 +4,8 @@ import { tasklist } from "@mdit/plugin-tasklist";
 
 const info = {
   title: "Sencilla",
-  description: "A sleek, contemporary, and purposefully designed theme and template",
+  description:
+    "A sleek, contemporary, and purposefully designed theme and template",
   accentColor: "#613F75",
 };
 
@@ -12,8 +13,7 @@ const info = {
 export default defineConfig({
   lang: "en-US",
   title: info.title,
-  description:
-    info.description,
+  description: info.description,
   lastUpdated: true,
   ignoreDeadLinks: true,
   cleanUrls: true,
@@ -33,9 +33,7 @@ export default defineConfig({
       },
     },
     nav: {
-      links: [
-        { url: "/", text: "Home" },
-      ],
+      links: [{ url: "/", text: "Home" }],
       git: "https://github.com/aplosdev/aplos",
     },
     footer: {
