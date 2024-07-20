@@ -1,13 +1,12 @@
 <div align="center">
 <h1>Sencilla</h1>
   
-A dead simple and minimalistic theme for blogs in VitePress.
+A dead simple and minimalistic blog plugin for Aplós in VitePress.
 
 </div>
 
 ## Features
 
-- Lightweight and minimalistic, using VitePress.
 - Elegantly styled with a primary color theme for a visually pleasing experience.
 - Mobile-friendly design with support for dark mode.
 - Utilizes premium fonts: Inter for text and Geist Mono for code snippets.
