@@ -20,7 +20,7 @@
     "@mdit/plugin-figure": "^0.13.1",
     "@mdit/plugin-tasklist": "^0.13.1",
     "eslint": "9.x",
-    "eslint-plugin-vue": "^9.26.0",
+    "eslint-plugin-vue": "^9.28.0",
     "globals": "^15.9.0",
     "inter-ui": "^4.0.2",
     "non.geist": "^1.0.3"
