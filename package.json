@@ -23,7 +23,7 @@
     "eslint-plugin-vue": "^9.28.0",
     "globals": "^15.11.0",
     "inter-ui": "^4.0.2",
-    "non.geist": "^1.0.3"
+    "non.geist": "^1.0.4"
   },
   "scripts": {
     "docs:dev": "pnpm --filter=./docs dev",
