@@ -9,7 +9,7 @@
     "sencilla": "workspace:*"
   },
   "devDependencies": {
-    "sass": "^1.81.0",
+    "sass": "^1.82.0",
     "vitepress": "^1.5.0"
   }
 }
