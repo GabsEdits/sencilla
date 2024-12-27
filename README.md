@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Sencilla</h1>
-  
+
 A dead simple and minimalistic blog plugin for Aplós in VitePress.
 
 </div>
@@ -36,7 +36,7 @@ npm i sencilla
 
 ## Contributing
 
-If you want to contribute to Sencila, you can check the [Contributing](https://aplos.gxbs.me/contributing) page in the documentation.
+If you want to contribute to Sencila, you can check the [Contributing](https://aplos.gxbs.dev/contributing) page in the documentation.
 
 ## Release Cycle
 
@@ -87,7 +87,7 @@ All other standard VitePress commands are available, like `pnpm demo:build` and 
 
 ## Thanks ❤ & Credits️
 
-- [Aplós](https://aplos.gxbs.me), from who Sencilla is forked.
+- [Aplós](https://aplos.gxbs.dev), from who Sencilla is forked.
 - [Inter](https://rsms.me/inter/), used for all Sans Serif text.
 - [Geist Mono](https://vercel.com/font/), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
