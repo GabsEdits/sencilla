@@ -43,7 +43,7 @@ export default defineConfig({
       madeby: {
         show: true,
         name: "Gabs",
-        link: "https://gxbs.me/",
+        link: "https://gxbs.dev/",
       },
 
       copyleft: {
