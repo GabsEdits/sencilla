@@ -47,7 +47,7 @@ If you want to contribute to Sencilla, you can check the [Contributing](/contrib
 
 Aplós whouldn't be possible without the following projects/people:
 
-- [Aplós](https://aplos.gxbs.me), from who Sencilla is forked.
+- [Aplós](https://aplos.gxbs.dev), from who Sencilla is forked.
 - [Inter](https://rsms.me/inter/), used as the main body font.
 - [Geist Mono](https://vercel.com/font), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
