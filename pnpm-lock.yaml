@@ -40,8 +40,8 @@ importers:
         specifier: ^3.4.2
         version: 3.4.2
       sass:
-        specifier: ^1.83.0
-        version: 1.83.0
+        specifier: ^1.83.1
+        version: 1.83.1
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -1189,11 +1189,6 @@ packages:
   rollup@4.21.0:
     resolution: {integrity: sha512-vo+S/lfA2lMS7rZ2Qoubi6I5hwZwzXeUIctILZLbHI+laNtvhhOIon2S1JksA5UEDQ7l3vberd0fxK44lTYjbQ==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
-    hasBin: true
-
-  sass@1.83.0:
-    resolution: {integrity: sha512-qsSxlayzoOjdvXMVLkzF84DJFc2HZEL/rFyGIKbbilYtAvlCxyuzUeff9LawTn4btVnLKg75Z8MMr1lxU1lfGw==}
-    engines: {node: '>=14.0.0'}
     hasBin: true
 
   sass@1.83.1:
@@ -2518,14 +2513,6 @@ snapshots:
       '@rollup/rollup-win32-ia32-msvc': 4.21.0
       '@rollup/rollup-win32-x64-msvc': 4.21.0
       fsevents: 2.3.3
-
-  sass@1.83.0:
-    dependencies:
-      chokidar: 4.0.0
-      immutable: 5.0.3
-      source-map-js: 1.2.1
-    optionalDependencies:
-      '@parcel/watcher': 2.4.1
 
   sass@1.83.1:
     dependencies:
