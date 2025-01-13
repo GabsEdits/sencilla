@@ -22,10 +22,10 @@ importers:
         version: 0.14.0
       eslint:
         specifier: 9.x
-        version: 9.17.0
+        version: 9.18.0
       eslint-plugin-vue:
         specifier: ^9.32.0
-        version: 9.32.0(eslint@9.17.0)
+        version: 9.32.0(eslint@9.18.0)
       globals:
         specifier: ^15.14.0
         version: 15.14.0
@@ -53,11 +53,11 @@ importers:
         version: link:..
     devDependencies:
       sass:
-        specifier: ^1.83.0
-        version: 1.83.0
+        specifier: ^1.83.1
+        version: 1.83.1
       vitepress:
         specifier: ^1.5.0
-        version: 1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.0)(search-insights@2.14.0)
+        version: 1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.1)(search-insights@2.14.0)
 
 packages:
 
@@ -321,8 +321,8 @@ packages:
     resolution: {integrity: sha512-zdHg2FPIFNKPdcHWtiNT+jEFCHYVplAXRDlQDyqy0zGx/q2parwh7brGJSiTxRk/TSMkbM//zt/f5CHgyTyaSQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/core@0.9.0':
-    resolution: {integrity: sha512-7ATR9F0e4W85D/0w7cU0SNj7qkAexMG+bAHEZOjo9akvGuhHE2m7umzWzfnpa0XAg5Kxc1BWmtPMV67jJ+9VUg==}
+  '@eslint/core@0.10.0':
+    resolution: {integrity: sha512-gFHJ+xBOo4G3WRlR1e/3G8A6/KZAH6zcE/hkLRCZTi/B9avAG365QhFA8uOGzTMqgTghpn7/fSnscW++dpMSAw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/eslintrc@3.2.0':
@@ -333,12 +333,16 @@ packages:
     resolution: {integrity: sha512-Sxc4hqcs1kTu0iID3kcZDW3JHq2a77HO9P8CP6YEA/FpH3Ll8UXE2r/86Rz9YJLKme39S9vU5OWNjC6Xl0Cr3w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@eslint/js@9.18.0':
+    resolution: {integrity: sha512-fK6L7rxcq6/z+AaQMtiFTkvbHkBLNlwyRxHpKawP0x3u9+NC6MQTnFW+AdpwC6gfHTW0051cokQgtTN2FqlxQA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@eslint/object-schema@2.1.4':
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/plugin-kit@0.2.3':
-    resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
+  '@eslint/plugin-kit@0.2.5':
+    resolution: {integrity: sha512-lB05FkqEdUg2AA0xEbUz0SnkXT1LcCTa438W4IWTUh4hdOnVbQyOJ81OrDXsJk/LSiJHubgGEFoR5EHq1NsH1A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@humanfs/core@0.19.1':
@@ -867,8 +871,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.17.0:
-    resolution: {integrity: sha512-evtlNcpJg+cZLcnVKwsai8fExnqjGPicK7gnUtlNuzu+Fv9bI0aLpND5T44VLQtoMEnI57LoXO9XAkIXwohKrA==}
+  eslint@9.18.0:
+    resolution: {integrity: sha512-+waTfRWQlSbpt3KWE+CjrPPYnbq9kfZIYUqapc0uBXyjTp8aYXZDsUH16m39Ryq3NjAVP4tjuF7KaukeqoCoaA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -1189,6 +1193,11 @@ packages:
 
   sass@1.83.0:
     resolution: {integrity: sha512-qsSxlayzoOjdvXMVLkzF84DJFc2HZEL/rFyGIKbbilYtAvlCxyuzUeff9LawTn4btVnLKg75Z8MMr1lxU1lfGw==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+
+  sass@1.83.1:
+    resolution: {integrity: sha512-EVJbDaEs4Rr3F0glJzFSOvtg2/oy2V/YrGFPqPY24UqcLDWcI9ZY5sN+qyO3c/QCZwzgfirvhXvINiJCE/OLcA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1597,9 +1606,9 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@eslint-community/eslint-utils@4.4.0(eslint@9.17.0)':
+  '@eslint-community/eslint-utils@4.4.0(eslint@9.18.0)':
     dependencies:
-      eslint: 9.17.0
+      eslint: 9.18.0
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
@@ -1612,7 +1621,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/core@0.9.0': {}
+  '@eslint/core@0.10.0':
+    dependencies:
+      '@types/json-schema': 7.0.15
 
   '@eslint/eslintrc@3.2.0':
     dependencies:
@@ -1630,10 +1641,13 @@ snapshots:
 
   '@eslint/js@9.17.0': {}
 
+  '@eslint/js@9.18.0': {}
+
   '@eslint/object-schema@2.1.4': {}
 
-  '@eslint/plugin-kit@0.2.3':
+  '@eslint/plugin-kit@0.2.5':
     dependencies:
+      '@eslint/core': 0.10.0
       levn: 0.4.1
 
   '@humanfs/core@0.19.1': {}
@@ -1830,9 +1844,9 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-vue@5.1.4(vite@5.4.10(sass@1.83.0))(vue@3.5.12)':
+  '@vitejs/plugin-vue@5.1.4(vite@5.4.10(sass@1.83.1))(vue@3.5.12)':
     dependencies:
-      vite: 5.4.10(sass@1.83.0)
+      vite: 5.4.10(sass@1.83.1)
       vue: 3.5.12
 
   '@vue/compiler-core@3.5.12':
@@ -2130,16 +2144,16 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-plugin-vue@9.32.0(eslint@9.17.0):
+  eslint-plugin-vue@9.32.0(eslint@9.18.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.17.0)
-      eslint: 9.17.0
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.18.0)
+      eslint: 9.18.0
       globals: 13.24.0
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.1.0
       semver: 7.6.3
-      vue-eslint-parser: 9.4.3(eslint@9.17.0)
+      vue-eslint-parser: 9.4.3(eslint@9.18.0)
       xml-name-validator: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -2158,15 +2172,15 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint@9.17.0:
+  eslint@9.18.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.17.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.18.0)
       '@eslint-community/regexpp': 4.12.1
       '@eslint/config-array': 0.19.0
-      '@eslint/core': 0.9.0
+      '@eslint/core': 0.10.0
       '@eslint/eslintrc': 3.2.0
-      '@eslint/js': 9.17.0
-      '@eslint/plugin-kit': 0.2.3
+      '@eslint/js': 9.18.0
+      '@eslint/plugin-kit': 0.2.5
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.1
@@ -2513,6 +2527,14 @@ snapshots:
     optionalDependencies:
       '@parcel/watcher': 2.4.1
 
+  sass@1.83.1:
+    dependencies:
+      chokidar: 4.0.0
+      immutable: 5.0.3
+      source-map-js: 1.2.1
+    optionalDependencies:
+      '@parcel/watcher': 2.4.1
+
   search-insights@2.14.0: {}
 
   semver@7.6.3: {}
@@ -2609,16 +2631,16 @@ snapshots:
       '@types/unist': 3.0.2
       vfile-message: 4.0.2
 
-  vite@5.4.10(sass@1.83.0):
+  vite@5.4.10(sass@1.83.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.21.0
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.83.0
+      sass: 1.83.1
 
-  vitepress@1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.0)(search-insights@2.14.0):
+  vitepress@1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.1)(search-insights@2.14.0):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.14.0)
@@ -2627,7 +2649,7 @@ snapshots:
       '@shikijs/transformers': 1.22.2
       '@shikijs/types': 1.22.2
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 5.1.4(vite@5.4.10(sass@1.83.0))(vue@3.5.12)
+      '@vitejs/plugin-vue': 5.1.4(vite@5.4.10(sass@1.83.1))(vue@3.5.12)
       '@vue/devtools-api': 7.6.1
       '@vue/shared': 3.5.12
       '@vueuse/core': 11.1.0(vue@3.5.12)
@@ -2636,7 +2658,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.1.0
       shiki: 1.22.2
-      vite: 5.4.10(sass@1.83.0)
+      vite: 5.4.10(sass@1.83.1)
       vue: 3.5.12
     optionalDependencies:
       postcss: 8.4.49
@@ -2672,10 +2694,10 @@ snapshots:
     dependencies:
       vue: 3.5.12
 
-  vue-eslint-parser@9.4.3(eslint@9.17.0):
+  vue-eslint-parser@9.4.3(eslint@9.18.0):
     dependencies:
       debug: 4.3.5
-      eslint: 9.17.0
+      eslint: 9.18.0
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
