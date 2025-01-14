@@ -40,8 +40,8 @@ importers:
         specifier: ^3.4.2
         version: 3.4.2
       sass:
-        specifier: ^1.83.0
-        version: 1.83.0
+        specifier: ^1.83.4
+        version: 1.83.4
       vue:
         specifier: ^3.5.13
         version: 3.5.13
@@ -53,11 +53,11 @@ importers:
         version: link:..
     devDependencies:
       sass:
-        specifier: ^1.83.1
-        version: 1.83.1
+        specifier: ^1.83.4
+        version: 1.83.4
       vitepress:
         specifier: ^1.5.0
-        version: 1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.1)(search-insights@2.14.0)
+        version: 1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.4)(search-insights@2.14.0)
 
 packages:
 
@@ -1191,13 +1191,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  sass@1.83.0:
-    resolution: {integrity: sha512-qsSxlayzoOjdvXMVLkzF84DJFc2HZEL/rFyGIKbbilYtAvlCxyuzUeff9LawTn4btVnLKg75Z8MMr1lxU1lfGw==}
-    engines: {node: '>=14.0.0'}
-    hasBin: true
-
-  sass@1.83.1:
-    resolution: {integrity: sha512-EVJbDaEs4Rr3F0glJzFSOvtg2/oy2V/YrGFPqPY24UqcLDWcI9ZY5sN+qyO3c/QCZwzgfirvhXvINiJCE/OLcA==}
+  sass@1.83.4:
+    resolution: {integrity: sha512-B1bozCeNQiOgDcLd33e2Cs2U60wZwjUUXzh900ZyQF5qUasvMdDZYbQ566LJu7cqR+sAHlAfO6RMkaID5s6qpA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1844,9 +1839,9 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-vue@5.1.4(vite@5.4.10(sass@1.83.1))(vue@3.5.12)':
+  '@vitejs/plugin-vue@5.1.4(vite@5.4.10(sass@1.83.4))(vue@3.5.12)':
     dependencies:
-      vite: 5.4.10(sass@1.83.1)
+      vite: 5.4.10(sass@1.83.4)
       vue: 3.5.12
 
   '@vue/compiler-core@3.5.12':
@@ -2519,15 +2514,7 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.21.0
       fsevents: 2.3.3
 
-  sass@1.83.0:
-    dependencies:
-      chokidar: 4.0.0
-      immutable: 5.0.3
-      source-map-js: 1.2.1
-    optionalDependencies:
-      '@parcel/watcher': 2.4.1
-
-  sass@1.83.1:
+  sass@1.83.4:
     dependencies:
       chokidar: 4.0.0
       immutable: 5.0.3
@@ -2631,16 +2618,16 @@ snapshots:
       '@types/unist': 3.0.2
       vfile-message: 4.0.2
 
-  vite@5.4.10(sass@1.83.1):
+  vite@5.4.10(sass@1.83.4):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.21.0
     optionalDependencies:
       fsevents: 2.3.3
-      sass: 1.83.1
+      sass: 1.83.4
 
-  vitepress@1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.1)(search-insights@2.14.0):
+  vitepress@1.5.0(@algolia/client-search@4.24.0)(postcss@8.4.49)(sass@1.83.4)(search-insights@2.14.0):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.14.0)
@@ -2649,7 +2636,7 @@ snapshots:
       '@shikijs/transformers': 1.22.2
       '@shikijs/types': 1.22.2
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 5.1.4(vite@5.4.10(sass@1.83.1))(vue@3.5.12)
+      '@vitejs/plugin-vue': 5.1.4(vite@5.4.10(sass@1.83.4))(vue@3.5.12)
       '@vue/devtools-api': 7.6.1
       '@vue/shared': 3.5.12
       '@vueuse/core': 11.1.0(vue@3.5.12)
@@ -2658,7 +2645,7 @@ snapshots:
       mark.js: 8.11.1
       minisearch: 7.1.0
       shiki: 1.22.2
-      vite: 5.4.10(sass@1.83.1)
+      vite: 5.4.10(sass@1.83.4)
       vue: 3.5.12
     optionalDependencies:
       postcss: 8.4.49
