@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "@csstools/normalize.css": "^12.1.1",
-    "@eslint/js": "^9.24.0",
+    "@eslint/js": "^9.25.1",
     "@mdit/plugin-figure": "^0.14.0",
     "@mdit/plugin-tasklist": "^0.14.0",
     "eslint": "9.x",
