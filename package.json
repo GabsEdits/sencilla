@@ -18,7 +18,7 @@
     "@csstools/normalize.css": "^12.1.1",
     "@eslint/js": "^9.27.0",
     "@mdit/plugin-figure": "^0.16.0",
-    "@mdit/plugin-tasklist": "^0.16.0",
+    "@mdit/plugin-tasklist": "^0.18.0",
     "eslint": "9.x",
     "eslint-plugin-vue": "^9.33.0",
     "globals": "^16.1.0",
