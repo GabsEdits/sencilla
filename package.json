@@ -41,7 +41,7 @@
   },
   "homepage": "https://aplos.gxbs.me",
   "devDependencies": {
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "sass": "^1.89.2",
     "vue": "^3.5.17"
   }
