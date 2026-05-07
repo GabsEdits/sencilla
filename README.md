@@ -3,6 +3,8 @@
 
 A dead simple and minimalistic blog plugin for Aplós in VitePress.
 
+*outdated*
+
 </div>
 
 ## Features
