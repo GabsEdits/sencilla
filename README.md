@@ -87,7 +87,7 @@ All other standard VitePress commands are available, like `pnpm demo:build` and 
 
 ## Thanks ❤ & Credits️
 
-- [Aplós](https://aplos.gxbs.dev), from who Sencilla is forked.
+- [Aplós](https://aplos.gxbs.dev), from who Sencilla is forked trye
 - [Inter](https://rsms.me/inter/), used for all Sans Serif text.
 - [Geist Mono](https://vercel.com/font/), used for code snippets.
 - [VitePress](https://vitepress.dev), which is used to power Aplós.
