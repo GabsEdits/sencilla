@@ -31,7 +31,7 @@ A dead simple and minimalistic blog plugin for Aplós in VitePress.
 You can install the package with the following command:
 
 ```bash
-npm i sencilla
+pnpm add sencilla
 ```
 
 ## Contributing
@@ -55,7 +55,7 @@ The 'next' tag is version of Sencilla, used to test the next version before it i
 You can install the 'next' tag with the following command:
 
 ```bash
-npm i aplos@next
+pnpm i aplos@next
 ```
 
 ### Development
