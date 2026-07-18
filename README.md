@@ -31,7 +31,7 @@ A dead simple and minimalistic blog plugin for Aplós in VitePress.
 You can install the package with the following command:
 
 ```bash
-npm i sencilla
+pnpm i sencilla
 ```
 
 ## Contributing
