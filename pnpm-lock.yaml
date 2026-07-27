@@ -18,8 +18,8 @@ importers:
         specifier: ^0.22.1
         version: 0.22.1
       '@mdit/plugin-tasklist':
-        specifier: ^0.22.1
-        version: 0.22.1
+        specifier: ^1.0.1
+        version: 1.0.1
       eslint:
         specifier: 9.x
         version: 9.39.2
@@ -408,11 +408,11 @@ packages:
       markdown-it:
         optional: true
 
-  '@mdit/plugin-tasklist@0.22.1':
-    resolution: {integrity: sha512-mn09Sm0fMV6ql3wb6TuoAai4gmnybvq09KeHa2ckBKKO/fwqVqCvOUI2yvZc3IrYMR+4B2WlBtyCBk5v11H9Uw==}
-    engines: {node: '>= 18'}
+  '@mdit/plugin-tasklist@1.0.1':
+    resolution: {integrity: sha512-Ks/Tihw5ibbkP2qOZzltkbiTk8RfpxDRvqdn4hl1wIs3VmeKITIQ36gN4DsuotSauA9SBe/mL0QJIfuSCrXqrw==}
+    engines: {node: '>=22'}
     peerDependencies:
-      markdown-it: ^14.1.0
+      markdown-it: ^14.2.0
     peerDependenciesMeta:
       markdown-it:
         optional: true
@@ -1739,7 +1739,7 @@ snapshots:
     dependencies:
       '@types/markdown-it': 14.1.2
 
-  '@mdit/plugin-tasklist@0.22.1':
+  '@mdit/plugin-tasklist@1.0.1':
     dependencies:
       '@types/markdown-it': 14.1.2
 
